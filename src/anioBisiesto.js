@@ -1,6 +1,7 @@
 function anioBisiesto(anio){
+    const salida = anio;
     if(anio % 400 == 0){
-        return anio + " Es un anio Bisiesto"
+        return `El anio ${salida} es un anio bisiesto`
     }
 }
 
