@@ -25,4 +25,17 @@ describe("Anio Bisiesto", () => {
     expect(anioBisiesto(1810)).toEqual("El anio " + 1810 + " es un anio bisiesto");
   });
   // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+  // Todos los años No divisibles por 4 NO son años bisiestos (por ejemplo, 2017, 2018, 2019)
+  it("Todos los años divisibles por 100 pero no por 400 SON años bisiestos (así, por ejemplo, 2017 no fue un año bisiesto)", () => {
+    expect(anioBisiesto(2017)).toEqual("El anio " + 2017 + " no es un anio bisiesto");
+  });
+  it("Todos los años divisibles por 100 pero no por 400 SON años bisiestos (así, por ejemplo, 2018 no fue un año bisiesto)", () => {
+    expect(anioBisiesto(2018)).toEqual("El anio " + 2018 + " no es un anio bisiesto");
+  });
+  it("Todos los años divisibles por 100 pero no por 400 SON años bisiestos (así, por ejemplo, 2019 no fue un año bisiesto)", () => {
+    expect(anioBisiesto(2019)).toEqual("El anio " + 2019 + " no es un anio bisiesto");
+  });
+  // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  
 });
